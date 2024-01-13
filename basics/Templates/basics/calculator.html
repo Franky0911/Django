@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            <table align="center" border="1">
+                <tr>
+                    <td>Num1</td>
+                    <td><input type="text" name="txtn1"></td>
+                </tr>
+                <tr>
+                    <td>Num2</td>
+                    <td><input type="text" name="txtn2"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="button" name="txtsum" value="+">
+                        <input type="button" name="txtdif" value="-">
+                        <input type="button" name="txtpro" value="*">
+                        <input type="button" name="txtdiv" value="/">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        The result = {{}}
+    </body>
+</html>
