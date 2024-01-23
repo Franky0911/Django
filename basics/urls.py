@@ -4,4 +4,5 @@ urlpatterns = [
     path('sum/',views.sum),
     path('calculator/',views.Calculate),
     path('LS/',views.large),
+    path("Bsalary/",views.bsalary),
 ]
