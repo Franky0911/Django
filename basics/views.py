@@ -57,7 +57,7 @@ def large(request):
     else:
         return render(request,"basics/ls.html")
     
-    def bsalary(request):
+def bsalary(request):
         if request.method=="POST":
             fname=request.POST.get("txtname")
             lname=request.POST.get("txtname1")
